@@ -18,7 +18,7 @@ if len(sys.argv) > 1:
         year = int(sys.argv[2])
 
 
-day_dir = Path(f'{year}/day{day}')
+day_dir = Path(f'{year}/day{day:02d}')
 day_dir.mkdir(parents=True, exist_ok=True)
 
 solve_path = day_dir / 'solve.py'
